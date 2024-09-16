@@ -1,9 +1,8 @@
-import { useState, useEffect, useRef } from 'react';
-import { DataTable, DataTableSelectionChangeParams } from 'primereact/datatable';
+import { useState, useEffect } from 'react';
+import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import {InputText} from 'primereact/inputtext';
 import { Button } from 'primereact/button';
-import { OverlayPanel } from 'primereact/overlaypanel';
 
 
 
@@ -46,7 +45,7 @@ const MyTableComponent = () => {
     setFirst(event.first);
   };
 
-  const onSelectionChange = (e: DataTableSelectionChangeParams) => {
+  const onSelectionChange = (e: any) => {
     
     setSelectedArtworks(e.value);
   };
@@ -59,7 +58,6 @@ const MyTableComponent = () => {
     }
   }
 
-  const op = useRef(null);
 
 
   return (
