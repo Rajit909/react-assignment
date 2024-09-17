@@ -90,7 +90,9 @@ const MyTableComponent = () => {
         <Column className='col' field="category" header="Category" style={{ width:'40%' }} body={(rowData) => rowData.category.slice(0,1)//to show only first category we uses slice if we want to show all category then we can use join method
         }></Column>
       </DataTable>
-    
+    <div style={{padding:"10px"}}>
+      <a href="https://github.com/Rajit909/react-assignment/tree/main/prime-table-assignment">Project Source Code</a>
+    </div>
     </div>
   );
 };
