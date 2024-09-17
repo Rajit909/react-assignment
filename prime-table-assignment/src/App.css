@@ -26,3 +26,28 @@
   padding: 5px;
   border-radius: 2px;
 }
+
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.p-field{
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 50%;
+}
+.p-field>h2{
+  color: #292727;
+}
+.input{
+  padding: 5px;
+  margin-right: 5px;
+}
+.p-field>Button{
+  padding: 5px 10px;
+}

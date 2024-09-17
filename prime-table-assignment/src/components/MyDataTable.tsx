@@ -61,13 +61,17 @@ const MyTableComponent = () => {
 
 
   return (
-    <div style={{border: "1px solid #dfdcdc", padding:"12px", borderRadius:"5px"}} className='card'>
+    <div className='card'>
+      <h2>
+        Prime React Table with Row Selection
+      </h2>
          <div className='p-field'>
             {/* input field to specify the number of rows */}
             <InputText
               value={rowsToSelect}
               onChange={(e)=>setRowsToSelect(e.target.value)}
               placeholder='Select rows...'
+              className='input'
               />
               <Button label='Submit' onClick={handleRowSelection} />
         </div>
@@ -78,7 +82,7 @@ const MyTableComponent = () => {
         selection={selectedArtworks} onSelectionChange={onSelectionChange}
         dataKey="id"
         scrollable scrollHeight='400px'
-        tableStyle={{minWidth: '20rem'}}
+        tableStyle={{minWidth: '20rem',border:"1px solid gray", borderRadius:"5px", padding:"10px", marginBottom:"10px"}}
             >
         <Column className='col' selectionMode="multiple" ></Column>
         <Column className='col' field="id" header="Code"></Column>
