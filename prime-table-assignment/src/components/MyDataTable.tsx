@@ -82,12 +82,12 @@ const MyTableComponent = () => {
         selection={selectedArtworks} onSelectionChange={onSelectionChange}
         dataKey="id"
         scrollable scrollHeight='400px'
-        tableStyle={{minWidth: '20rem',border:"1px solid gray", borderRadius:"5px", padding:"10px", marginBottom:"10px"}}
+        tableStyle={{minWidth: '20rem', padding:"10px", marginBottom:"10px"}}
             >
         <Column className='col' selectionMode="multiple" ></Column>
         <Column className='col' field="id" header="Code"></Column>
-        <Column className='col' field="title" header="Name" style={{ width: '40%' }}></Column>
-        <Column className='col' field="category" header="Category" style={{ width:'40%' }} body={(rowData) => rowData.category.slice(0,1)//to show only first category we uses slice if we want to show all category then we can use join method
+        <Column className='col' field="title" header="Name" ></Column>
+        <Column className='col' field="category" header="Category" body={(rowData) => rowData.category.slice(0,1)//to show only first category we uses slice if we want to show all category then we can use join method
         }></Column>
       </DataTable>
     <div style={{padding:"10px"}}>

@@ -21,13 +21,6 @@
   }
 }
 
-.col{
-  background: #f3efef;
-  padding: 5px;
-  border-radius: 2px;
-}
-
-
 .card{
   display: flex;
   flex-direction: column;
@@ -35,12 +28,7 @@
   align-items: center;
   gap: 10px;
 }
-.p-field{
-  padding: 10px;
-  border: 1px solid gray;
-  border-radius: 5px;
-  width: 50%;
-}
+
 .p-field>h2{
   color: #292727;
 }
