@@ -9,7 +9,7 @@ import { PrimeReactProvider } from 'primereact/api';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-   <PrimeReactProvider value={{ unstyled: true }}>
+   <PrimeReactProvider>
         <App />
     </PrimeReactProvider>
   </StrictMode>,
